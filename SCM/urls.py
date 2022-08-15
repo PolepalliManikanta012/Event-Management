@@ -20,6 +20,7 @@ from scmapp import views
 
 urlpatterns = [
     # path(r'^/',views.index,name='index'),
+    path('', views.user_home, name='home'),
     path('scm/',include('scmapp.urls')),
     path('admin/', admin.site.urls),
 ]
